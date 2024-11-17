@@ -77,13 +77,15 @@ const renderCart = () => {
         cartList.innerHTML="<p>Your cart is empty</p>";
     }else{
         cart.forEach(item =>{
-            const li =document.createElement('li');
-            li.innerHTML= `
-            ${item.name} -$${item.price}
-            <button onclick="removeFromCart(${item.id})">Remove</button>
-            
-            `;
-            cartList.appendChild(li);
+            const productDiv =document.createElement('div');
+           
+           productDiv.innerHTML= `
+           <img src ="${item.image}" alt="${item.name}"/>
+           <h3>${item.name}</h3>
+           <p>price:$${item.price}</p>
+           <button onclick="removeFromCart(${item.id})">Remove</button>
+           `;
+            cartList.appendChild(productDiv);
         })
     }
 
@@ -91,7 +93,7 @@ const renderCart = () => {
 
 const filterProducts = () => {
     const searchTerm =document.getElementById('filter-input').value.toLowerCase();
-    const filteredProducts =products.filter(product => product.nametoLowerCase().includes(searchTerm));
+    const filteredProducts =products.filter(product => product.name.toLowerCase().includes(searchTerm));
     renderProducts(filteredProducts);
 }
 

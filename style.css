@@ -33,10 +33,17 @@ a{
     color: white;
 }
 
-.title{
+.product-title{
     font-size: 2rem;
     text-align: center;
-    margin: 100px
+    margin: 30px
+}
+
+@media(max-width: 800px){
+    .product-title{
+        font-size: 1rem;
+        margin: 10px;
+    }
 }
 
 .main{
@@ -46,9 +53,10 @@ a{
 }
 
 #cart-list{
-    background-color: aquamarine;
+    background-color:lightcyan;
     width: 30%;
     cursor: pointer;
+    border: 1px solid lightgray;
 }
 
 
@@ -59,10 +67,20 @@ a{
     justify-content: center;
 }
 
+
+
+
 img{
     width: 20vw;
     height: 40vh;
 
+}
+
+@media(max-width:800px){
+    img{
+        width:10vw;
+        height: 20vh;
+    }
 }
 
 p{
@@ -74,8 +92,16 @@ p{
 button{
     background-color:lightblue;
     cursor: pointer;
+    border-radius: 5px;
+    width: 8vw;
+    height: 5vh;
 }
 
+@media(max-width:800px){
+    button{
+        font-size: 10px;
+    }
+}
 
 
 button:hover{
@@ -110,12 +136,22 @@ footer{
 }
 
 
-#inp{
-    margin-left: 3%;
-    margin-top:3%;
-    width: 20vw;
-    height: 5vh;
-    border: 2px solid black;
+#filter-input{
+    width: 30vw;
+    height: 6vh;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 20px;
 }
 
+@media(max-width:800px){
+    p{
+        font-size: 1rem;
+    }
+}
 
+@media(max-width: 800px){
+    .title{
+        font-size: 1rem;
+    }
+}
