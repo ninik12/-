@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+
+main{
+    background-color:aliceblue;
+}
+
 .navigation{
     display: flex;
     justify-content: space-between;
@@ -15,8 +20,19 @@
 }
 
 .logo{
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 20px;
+    color:darkorange;
+    font-size: 2rem;
+    
+}
+
+@media(max-width: 800px){
+    .logo{
+        margin-left: 10%;
+
+        font-size: 1rem;
+    }
 }
 
 ul{
@@ -49,9 +65,15 @@ a{
 .main{
     margin: auto;
     justify-content: center;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
+@media(max-width: 800px){
+    .main{
+        margin-left: 50px;
+        
+    }
+}
 #cart-list{
     background-color:lightcyan;
     width: 30%;
@@ -70,16 +92,20 @@ a{
 
 
 
+
+
 img{
     width: 20vw;
     height: 40vh;
+    border: 2px solid lightgray;
+    border-radius: 10px;
 
 }
 
 @media(max-width:800px){
     img{
-        width:10vw;
-        height: 20vh;
+        width:17vw;
+        height: 15vh;
     }
 }
 
@@ -100,6 +126,8 @@ button{
 @media(max-width:800px){
     button{
         font-size: 10px;
+        height: 3vh;
+        font-size: 7px;
     }
 }
 
@@ -145,13 +173,27 @@ footer{
 }
 
 @media(max-width:800px){
+    iframe{
+        width: 70vw;
+        height: 30vh;
+    }
+}
+
+@media(max-width:800px){
     p{
-        font-size: 1rem;
+        font-size: 12px;
     }
 }
 
 @media(max-width: 800px){
     .title{
         font-size: 1rem;
+    }
+}
+
+
+@media(max-width:800px){
+    h3{
+        font-size: 14px;
     }
 }
